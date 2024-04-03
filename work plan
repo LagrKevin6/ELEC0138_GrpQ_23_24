@@ -1,0 +1,43 @@
+Deliverables, as copied:
+
+Coursework 1:
+1. Identify assets: Identify the assets of the system, including data, applications, and 
+infrastructure. 
+2. Identify threats: Identify the potential security (or privacy or both)  threats to each asset, 
+including internal and external threats. 
+3. Assess impact: Evaluate the potential impact of each threat, including the potential 
+damage to the assets and the cost of remediation. 
+4. Prioritize threats: Prioritize the threats based on their impact and likelihood of occurrence 
+and focus on mitigating the highest-priority threats. 
+5. Design the security (or privacy or both) threats by implementing code-based attacks and 
+utilizing existing tools. You will have to be as exhaustive as you can covering as many attacks 
+as possible. 
+
+Coursework 2: Security/Privacy mitigations  
+Consider the above threat model and threats, and within the context of the course: 
+1. Design an app/system for security (or privacy or both) defence (including access control, 
+encryption, firewalls, intrusion detection and prevention,..). 
+2. Present and discuss opportunities innovation, creativity, enterprise, scalability &  
+complexity analysis within your system. 
+3.  Explain regulation and ethical considerations. You will have to explain how you will 
+adhere to the several privacy/security regulations, GDPR in Europe and equivalent in other 
+continents and explain what ethical issues may be raised by your prototype. 
+
+大概的 work plan:
+4.10 前：
+根据之前的文件写coursework 1 1.-4. （报告开头）
+决定好具体细节（用什么语言，虚拟机，dataset），搭好环境，可以开始后一步
+4.10-4.15：具体实现；目前能想到的有：
+搭建dataset与终端terminal
+实现攻击：
+  内部泄露
+  局域网ddos, 中间人
+  弱密码，弱加密方式
+  （请补充）
+解决办法：
+  （文档里有）
+  实现federate learning（如有时间）
+有可确定进度则写报告
+4.16，4.17：就已有成果拍视频，剪辑等
+4.18：完成报告剩余部分，如coursework 2 2.和3.，conclusion等
+4.19当天： 下午4点交报告，之前最后检查＋添补

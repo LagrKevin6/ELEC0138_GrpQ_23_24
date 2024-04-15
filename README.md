@@ -28,6 +28,12 @@ http://127.0.0.1:8000/login/new: login func. One account available is admin_q, p
 
 http://127.0.0.1:8000/login/view_logins : checks all login details (designed on purpose)
 
+http://127.0.0.1:8000/login/show_visits : checks number of visits to login/view_logins (designed for ddos)
+
 to brute-force the password, run:
 
 python attack_script.py
+
+to ddos a url (default as login/view_logins), run:
+
+python dos_attack_implementation.py

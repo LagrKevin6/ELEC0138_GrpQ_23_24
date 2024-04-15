@@ -31,12 +31,20 @@ def new(request):
         logger.warning(f"Login attempt with username: {username} and password: {password}")
         LoginAttempt.objects.create(username=username, password=password)
 
+        # Ensuring username and password are not None
+        if not username or not password:
+            return HttpResponse("Username or password are required", status=400)
+
         user = authenticate(username=username, password=password)
         if user is not None:
             login(request, user)
-            return HttpResponse("You are logged in.",header = {"status":True})
+            resp = HttpResponse("You are logged in.", status=200)
+            #resp["status"]=True
+            return resp
         else:
-            return HttpResponse("Login failed.",header = {"status":False})
+            resp = HttpResponse("Login failed.", status=403)
+            #resp["status"]=False
+            return resp
     return render(request, 'user_login.html')
 
 

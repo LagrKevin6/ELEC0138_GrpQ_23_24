@@ -11,11 +11,20 @@ Main functions of code files:
 /login/urls: tells what should be returned when a certain url called.
 /login/views: tells what should be seen when returned.
 
-Usage: install django and cd to this main folder;
+Usage: install django and cd to this main folder (sce_data);
 run 
+
 python manage.py runserver
+
 to start a web server at the local network. An IP address would be given and accessible at web browser.
 e.g.: 
+
 http://127.0.0.1:8000/login/: should see a brief text response 'This starts'
+
 http://127.0.0.1:8000/login/new: login func. One account available is admin_q, pwd = 123456
+
 http://127.0.0.1:8000/login/view_logins : checks all login details (designed on purpose)
+
+to brute-force the password, run:
+
+python attack_script.py

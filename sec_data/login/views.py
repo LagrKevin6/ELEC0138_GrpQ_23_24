@@ -34,9 +34,9 @@ def new(request):
         user = authenticate(username=username, password=password)
         if user is not None:
             login(request, user)
-            return HttpResponse("You are logged in.")
+            return HttpResponse("You are logged in.",header = {"status":True})
         else:
-            return HttpResponse("Login failed.")
+            return HttpResponse("Login failed.",header = {"status":False})
     return render(request, 'user_login.html')
 
 

@@ -9,8 +9,8 @@ def bruteforce(strategy = "common_pass", max_nchar=8):
 
     Parameters
     ----------
-    password : string
-        To-be-found password.
+    strategy : string
+        Password strategy
     max_nchar : int
         Maximum number of characters of password.
 

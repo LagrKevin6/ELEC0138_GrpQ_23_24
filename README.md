@@ -34,9 +34,15 @@ to brute-force the password, run:
 
 python attack_script.py
 
+The current new function adds the function of preventing brute force. If you want to test brute force attack, please change the news function in sec_data/login/views to the commented out version.
+
+
 to ddos a url (default as login/view_logins), run:
 
 python dos_attack_implementation.py
 
+RateLimitMiddleware.py: This script provides the function of DOS prevention. It has been called in setting.py and will run at the same time when the server is started. If the same IP address sends more than 100 requests within 10 minutes, it will be locked.
+
 to check the username and pwd in captured .pcapng file, run:
 python check_packet.py
+

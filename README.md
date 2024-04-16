@@ -37,3 +37,6 @@ python attack_script.py
 to ddos a url (default as login/view_logins), run:
 
 python dos_attack_implementation.py
+
+to check the username and pwd in captured .pcapng file, run:
+python check_packet.py

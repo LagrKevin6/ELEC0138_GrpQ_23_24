@@ -7,15 +7,13 @@ HOST_URL = "http://127.0.0.1:8000/login/new"
 def send_password(password_list:list):
     for i in password_list:
         try:
-          '''
-          please change the code here to send request
-          '''
+         
           payload = {
             "username": "admin_q",
             "password":str(i)
             }
           
-          #response = requests.post(HOST_URL,headers=payload)
+          
           response = requests.post(HOST_URL,data=payload)
           response.raise_for_status()  # Raise an exception for unsuccessful requests
 

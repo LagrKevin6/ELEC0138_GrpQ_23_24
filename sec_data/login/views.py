@@ -13,7 +13,7 @@ matplotlib.use('Agg')  # Use the non-GUI Agg backend for rendering to file
 import matplotlib.pyplot as plt
 from io import BytesIO
 import base64
-from django.db.models.functions import TruncHour
+from django.db.models.functions import TruncHour, TruncDate
 from django.db.models import Count
 
 from datetime import datetime, timedelta
@@ -117,31 +117,35 @@ def view_logins(request):
 def show_visits(request):
 
     visit_data = (PageVisit.objects
-                  .annotate(hour=TruncHour('timestamp'))
-                  .values('hour')
+                  .annotate(date_hour=TruncHour('timestamp'))
+                  .values('date_hour')
                   .annotate(count=Count('id'))
-                  .order_by('hour'))
+                  .order_by('date_hour'))
 
-    hours = [data['hour'].hour for data in visit_data if data['hour'] is not None]
+    dates_hours = [data['date_hour'].strftime("%Y-%m-%d %H:%M") for data in visit_data]
     counts = [data['count'] for data in visit_data]
 
     # Bar graph showing counts
-    plt.figure(figsize=(10, 5)) 
-    plt.bar(hours, counts, color='blue')
-    plt.xlabel('Hour of the Day')
-    plt.ylabel('Number of Visits')
-    plt.title('Hourly Visits')
-    plt.xticks(hours)  # Ensure all hours are labeled
-    plt.grid(True)
+    if dates_hours:
+        plt.figure(figsize=(12, 6)) 
+        plt.bar(dates_hours, counts, color='blue')
+        plt.xlabel('Date and Hour')
+        plt.ylabel('Number of Visits')
+        plt.title('Hourly Visits')
+        plt.xticks(rotation=60)  # Rotate labels for better readability
+        plt.tight_layout()
+        plt.grid(True)
 
-    buffer = BytesIO()
-    plt.savefig(buffer, format='png')
-    plt.close()
-    buffer.seek(0)
-    image_png = buffer.getvalue()
-    graph = base64.b64encode(image_png)
-    graph = graph.decode('utf-8')
+        buffer = BytesIO()
+        plt.savefig(buffer, format='png')
+        plt.close()
+        buffer.seek(0)
+        image_png = buffer.getvalue()
+        graph = base64.b64encode(image_png)
+        graph = graph.decode('utf-8')
 
-    buffer.close()
+        buffer.close()
+    else:
+        graph = None
 
     return render(request, 'show_visits.html', {'graph': graph})

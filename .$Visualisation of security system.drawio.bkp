@@ -1,0 +1,76 @@
+<mxfile host="Electron" modified="2024-04-17T08:32:53.868Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="2D5AjGs9jJJfsvoenx4W" version="24.1.0" type="device">
+  <diagram name="第 1 页" id="KePBtAcZx3KhUnR8SmVD">
+    <mxGraphModel dx="2590" dy="1515" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="M8nU9BfUwyZParAMLGpB-3" value="&lt;span style=&quot;font-weight: 700; font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Assets&lt;/font&gt;&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="170" y="420" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-4" value="&lt;span id=&quot;docs-internal-guid-96a48b7f-7fff-7882-8222-eaa4d0c22ed5&quot; style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;font-size: 20px; font-family: Arial, sans-serif; background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Customer Data&lt;/span&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="M8nU9BfUwyZParAMLGpB-3">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-5" value="&lt;span id=&quot;docs-internal-guid-d137fc88-7fff-91e9-8374-7513aa6cd43d&quot; style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;font-size: 20px; font-family: Arial, sans-serif; background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Online Platforms&lt;/span&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="M8nU9BfUwyZParAMLGpB-3">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-19" value="Protection" style="swimlane;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="550" y="230" width="160" height="800" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-10" value="CSRF Protection" style="image;html=1;image=img/lib/clip_art/networking/Firewall_02_128x128.png;fontSize=20;" vertex="1" parent="M8nU9BfUwyZParAMLGpB-19">
+          <mxGeometry x="40" y="60" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-14" value="Acess control" style="image;html=1;image=img/lib/clip_art/networking/Firewall_02_128x128.png;fontSize=20;" vertex="1" parent="M8nU9BfUwyZParAMLGpB-19">
+          <mxGeometry x="40" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-15" value="Encrption" style="image;html=1;image=img/lib/clip_art/networking/Firewall_02_128x128.png;fontSize=20;" vertex="1" parent="M8nU9BfUwyZParAMLGpB-19">
+          <mxGeometry x="40" y="315" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-35" value="&lt;span id=&quot;docs-internal-guid-841d4fd0-7fff-6750-bed2-52abd3bc3ddb&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp;Account locking mechanism&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;" style="image;html=1;image=img/lib/clip_art/networking/Firewall_02_128x128.png;fontSize=20;" vertex="1" parent="M8nU9BfUwyZParAMLGpB-19">
+          <mxGeometry x="40" y="450" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-36" value="&lt;span id=&quot;docs-internal-guid-2aff032e-7fff-0b27-4945-cdb4adeda72d&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; color: rgb(13, 13, 13); font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;IP address restriction&lt;/span&gt;&lt;/span&gt;" style="image;html=1;image=img/lib/clip_art/networking/Firewall_02_128x128.png;fontSize=20;" vertex="1" parent="M8nU9BfUwyZParAMLGpB-19">
+          <mxGeometry x="40" y="620" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=20;" edge="1" parent="1" source="M8nU9BfUwyZParAMLGpB-21" target="M8nU9BfUwyZParAMLGpB-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-21" value="Threat Identification" style="swimlane;whiteSpace=wrap;html=1;startSize=50;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1253" y="250" width="295" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-8" value="&lt;span id=&quot;docs-internal-guid-33315d4d-7fff-38fd-e86e-dd8d9e4bd9ef&quot; style=&quot;font-size: 20px;&quot;&gt;&lt;h3 dir=&quot;ltr&quot; style=&quot;line-height: 1.38; text-align: justify; margin-top: 12pt; margin-bottom: 12pt; font-size: 20px;&quot;&gt;&lt;span style=&quot;font-size: 20px; font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Malicious Attacks&lt;/span&gt;&lt;/h3&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="M8nU9BfUwyZParAMLGpB-21">
+          <mxGeometry x="52.5" y="100" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-12" value="&lt;span id=&quot;docs-internal-guid-ebbf329b-7fff-815e-31d7-8b973f506e3c&quot; style=&quot;font-size: 20px;&quot;&gt;&lt;h3 dir=&quot;ltr&quot; style=&quot;line-height: 1.38; text-align: justify; margin-top: 12pt; margin-bottom: 12pt; font-size: 20px;&quot;&gt;&lt;span style=&quot;font-size: 20px; font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Employees Misperformance&lt;/span&gt;&lt;/h3&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="M8nU9BfUwyZParAMLGpB-21">
+          <mxGeometry x="22.5" y="210" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#FF3333;fontSize=20;" edge="1" parent="1" source="M8nU9BfUwyZParAMLGpB-24" target="M8nU9BfUwyZParAMLGpB-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-24" value="Attack Implementation" style="swimlane;whiteSpace=wrap;html=1;fontSize=20;startSize=60;" vertex="1" parent="1">
+          <mxGeometry x="933" y="250" width="210" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-23" value="Dos attack" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="M8nU9BfUwyZParAMLGpB-24">
+          <mxGeometry x="45" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-22" value="Brute force attack" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="M8nU9BfUwyZParAMLGpB-24">
+          <mxGeometry x="45" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-26" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Web Server&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="360" y="382.5" width="100" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-27" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=20;" edge="1" parent="1" source="M8nU9BfUwyZParAMLGpB-4" target="M8nU9BfUwyZParAMLGpB-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="590" as="sourcePoint" />
+            <mxPoint x="620" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;fontSize=20;" edge="1" parent="1" source="M8nU9BfUwyZParAMLGpB-33" target="M8nU9BfUwyZParAMLGpB-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M8nU9BfUwyZParAMLGpB-33" value="legal access" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="960" y="1050" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

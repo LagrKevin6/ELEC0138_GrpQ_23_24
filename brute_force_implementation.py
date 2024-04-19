@@ -31,17 +31,17 @@ def bruteforce(strategy = "common_pass", max_nchar=8):
             # Digits cartesian product
             for l in range(1, 9):
                 generator = product(string.digits, repeat=int(l))
-                return generator
+            return generator
         case "digitAndLowercase":
             # Digits + ASCII lowercase
             for l in range(1, max_nchar + 1):
                 generator = product(string.digits + string.ascii_lowercase,
                                     repeat=int(l))
-                return generator
+            return generator
         case "fullCase":
             # Digits + ASCII lower / upper + punctuation
             # If it fails, start brute-forcing the 'hard' way
             all_char = string.digits + string.ascii_letters + string.punctuation
             for l in range(1, max_nchar + 1):
                 generator = product(all_char, repeat=int(l))
-                return generator
+            return generator

